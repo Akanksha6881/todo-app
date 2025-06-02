@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskNest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>TaskNest 
+        <img src="https://cdn-icons-png.flaticon.com/512/6196/6196637.png" />
+      </h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task..." />
+        <select id="priority-box">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="list-container"></ul>
+      <button onclick="clearAll()" class="clear-btn">Clear All</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
